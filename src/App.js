@@ -57,7 +57,10 @@ function App() {
           />
         ))}
       </div>
-      <button className="button" onClick={win ? () => setDice(generateArray()) : roll}>
+      <button
+        className="button"
+        onClick={win ? () => setDice(generateArray()) : roll}
+      >
         {win ? "Play again" : "Roll"}
       </button>
     </div>
